@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>resume-Evelyn</title>
+	
+		<link rel="stylesheet" type="text/css" href="resume-evelyn.css">
+  <style type="text/css">* {
+  /*   outline:1px solid black; */
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #bd4b41;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+/* 複寫 */
+ul {
+  padding: 0;
+  list-style: none;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #3dbf9e;
+  margin-left: 5px;
+}
+h4 {
+  margin: 0;
+  margin-top: 40px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+a {
+  color: #bd4b41;
+  text-decoration: none;
+}
+p {
+  text-align: justify;
+  text-indent: 30px;
+  margin-top: 5px;
+}
+h5 {
+  background: linear-gradient(transparent 50%, #ccc 100%);
+  margin: 5px 0px 5px 0px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+hr {
+  border: none;
+  border-bottom: 2px solid #3dbf9e;
+  width: 100%;
+  margin-left: 0;
+}
+.resume {
+  display: flex;
+  max-width: 950px;
+  background-color: #fff;
+  border: solid 20px #3dbf9e;
+  padding: 50px;
+  position: relative;
+  box-shadow: 10px 10px 20px rgba(150, 0, 0, .7);
+  transition: 1s;
+}
+.left, .right {
+  padding: 15px;
+}
+.left {
+  flex: 5;
+  padding-right: 50px;
+  border-right: solid 1px #ff7168;
+}
+.right {
+  flex: 6;
+  padding-left: 50px;
+  padding-top: 180px;
+}
+.listExperience > li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.listExperience li ul {
+  padding-left: 18px;
+  margin-left: 10px;
+  border-left: solid 4px #ff7168;
+}
+.listExperience li:nth-child(4) ul {
+  border-color: rgba(61, 191, 158, .7);
+}
+.listExperience li:nth-child(3) ul {
+  border-color: rgba(255, 113, 104, .6);
+}
+.listExperience li:nth-child(2) ul {
+  border-color: rgba(61, 191, 158, .5);
+}
+.listExperience li:nth-child(1) ul {
+  border-color: rgba(255, 113, 104, .4);
+}
+.decoration img {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  height: 190px;
+  vertical-align: top;
+  border-radius: 2px;
+  box-shadow: 10px -5px 10px rgba(194, 23, 43, .5);
+}
+.decoration img:hover {
+  width: 20%;
+  height: 20%;
+  transform: perspective(200px) rotateY(-5deg);
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 113, 104, .3);
+  border-radius: 50%;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, .5);
+  position: relative;
+  overflow: hidden;
+}
+.p90, .p180, .p270, .p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  background-color: #ff7168;
+}
+.p90 {
+  right: 0;
+  top: 0;
+}
+.p180 {
+  right: 0;
+  bottom: 0;
+}
+.p270 {
+  left: 0;
+  bottom: 0;
+}
+.p360 {
+  left: 0;
+  top: 0;
+}
+.circle::after {
+  content: '';
+  display: block;
+  background-color: white;
+  width: calc(100% - 25px);
+  height: calc(100% - 25px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.listSkill {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listSkill li {
+  font-size: 10px;
+  line-height: 2;
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.listProgram li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.listProgram .bar {
+  width: 50%;
+  height: 8px;
+  border: solid 2px #ff7168;
+  border-radius: 5px;
+}
+.listProgram .value {
+  width: 30%;
+  height: 8px;
+  background-color: #ff7168;
+}
+.listProgram li:nth-child(1) .value, .listProgram li:nth-child(6) .value {
+  width: 80%;
+}
+.listProgram li:nth-child(2) .value {
+  width: 60%;
+}
+.listProgram li:nth-child(3) .value, .listProgram li:nth-child(7) .value {
+  width: 55%;
+}
+.listProgram li:nth-child(4) .value {
+  width: 75%;
+}
+.listProgram li:nth-child(5) .value {
+  width: 65%;
+}
+.listProgram li:nth-child(8) .value {
+  width: 50%;
+}
+.work li {
+  margin: 5px 0px 5px 0px;
+}
+</style>
+	
+</head>
+<body>
+	<div class="resume">
+  <div class="left">
+    <div class="personalInformation">
+    <h1>劉怡蒙 Evelyn Liu</h1>
+    <h4>東吳大學 資訊管理學系</h4>    
+    <hr>
+    <p>您好，我是畢業於東吳大學資管系學士班，並利用系上提供的五年一貫學制畢業於東吳資管所。</p>
+    <p>在大學期間，以Java為程式母語開始了我的大學生活，在於大二暑假於顯赫資訊公司進行實習兩個月，期間工作內容包含測試設備、處理資料程式的撰寫、修改網頁程式的工作。在這間公司我初步建立了資料庫的概念。</p>
+    <p>在大學的課堂中也有在課堂撰寫小遊戲、App等等。大學專題是應用Android Studio開發一款App-ㄛㄛ睏，是一款讓使用者可以通過手環與自身紀錄睡眠、飲食、運動等習慣，並針對這些數據進行睡眠診斷與回饋，以利失眠者控管睡眠的一款App。在專題成果中我負責的部分為App內部專家系統讓App計算數據之後回饋適合的內容給使用者，定義資料庫欄位存取資料，撰寫內部json格式與後台連結（後台php由另外一位同學負責）。</p>
+    <p>選擇繼續就讀碩士深受我的專題指導老師 朱蕙君 副教授的影響，他的認真與進取的態度讓我想要繼續向他學習。在今年9月以碩論 “以決策樹為基礎之產後醫療行動遊戲式學習系統之建置與成效分析” 為研究成果畢業，此研究用Unity開發一款產後教育遊戲供產後產婦使用並學習產後知識以提升其學習成效有利在現實生活中的產後自身與寶寶的產後照顧。</p>
+    
+    <h4>人格特質</h4>
+    <hr>
+    <p>我是一名韓國華僑出生於韓國，在我15歲前都居住在韓國並就讀當地的華僑學校，後因家庭因素於大陸山東省威海市求學4年，並於7年前到台灣就讀高中。在成長過程中因受到多國文化影響，適應力較快可快速融入環境。為人認真正直，賦予工作就會帶有責任感去學，可以接受挑戰。</p>
+</div>
+<!--     <div class="buttons">
+      <a class="btn fill" href="" target="_blank">作品集</a>
+      <a class="btn">Github</a>
+    </div> -->
+    <div class="block">
+      <h4>Experience</h4>
+      <h2>經歷</h2>
+      <ul class="listExperience">
+        <li class="year">
+          2013
+          <ul>
+            <li>就讀東吳大學 資訊管理學系 學士班</li>
+            <li>兼職 - 朱蒙韓式料理</li>
+          </ul>
+
+        </li>
+        <li class="year">2015
+        <ul>
+            <li>實習 - 顯赫資訊</li>
+        </ul>
+          
+        </li>
+        <li class="year">2016<ul>
+          <li>兼職 - 鴻滕貿易公司</li>  
+          <li>專題 - Android App ㄛㄛ睏</li>
+          </ul>
+        </li>
+        <li class="year">2017
+        <ul>
+          <li>東吳大學 資訊管理學系 學士畢業</li>
+          <li>就讀東吳大學 資訊管理所 碩士班</li>
+            <li>接案 - Sophos Converter Beta版開發</li>  
+          <li>隨堂助理 - 計算機概論</li>
+          <li>隨堂助理 - Python入門</li>
+          </ul>
+        </li>
+        <li class="year">2018
+        <ul>
+          <li>隨堂助理 - 程式邏輯基礎</li>
+          <li>隨堂助理 - 數位學習導論</li>
+          <li>開發 - Unity 產婦衛教遊戲</li>
+          <li>東吳大學 資訊管理所 碩士畢業</li>
+            
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+    
+  </div>
+
+  <div class="right">
+    <div class="decoration">
+       <img href='https://drive.google.com/file/d/1NZ1CSI6d6yH26Ew7ngy27D-QeRaNVXle/view?usp=sharing&amp;usp=embed_facebook&source=ctrlq.org'><img src='https://lh5.googleusercontent.com/3f7Ydk2xYTtt09i1Lykwo_e4A_OmkDbyyAYQZz6gGfeTmUk_N7UEioTqo7s=w2400' /></img> 
+    </div>
+    
+    <div class="blocks">
+      <h4>Skills</h4>
+      <h2>專業技能</h2>
+      <h5>程式技能</h5>
+      <ul class="listSkill">
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+            <div class="p270"></div>
+          </div>
+          前端網頁開發
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+            <div class="p270"></div>
+          </div>
+          遊戲開發
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+          </div>
+          桌面應用程式開發
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+          </div>
+          資料處理
+        </li>
+      </ul>
+      
+      <h5>設計技能</h5>
+      <ul class="listSkill">
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+          </div>
+          icon設計 adobeAI
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+          </div>
+          adobePS/AI
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+            <div class="p270"></div>
+          </div>
+          Office文書處理
+        </li>
+      </ul>
+    
+      <h5>語言能力</h5>
+      <ul class="listSkill">
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+            <div class="p270"></div>
+            <div class="p360"></div>
+          </div>
+          中文
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+            <div class="p270"></div>
+          </div>
+          韓文
+        </li>
+        <li>
+          <div class="circle">
+            <div class="p90"></div>
+            <div class="p180"></div>
+          </div>
+          英文
+        </li>
+      </ul>
+    </div>
+    <div class="block">
+      <h4>Programming</h4>
+      <h2>程式技能</h2>
+      <ul class="listProgram">
+        <li>
+          Html/Css/Js
+          <div class="bar">
+            <div class="value"></div>  
+          </div>
+        </li>
+        
+        <li> 
+          Unity
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+        <li>
+          
+          VS開發web/視窗+C#
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+        <li>
+          
+          資料庫
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+        <li>
+          
+          Unity
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+        
+        <li>
+          Java
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+        <li>
+          
+          Android
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+        <li>
+          Python
+          <div class="bar">
+            <div class="value"></div>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+    <div class="block">
+      <h4>Contesets / Work</h4>
+      <h2>比賽經歷與作品</h2>
+      <ul class="work">
+        
+        <li>大學時期課堂小作品</li>
+        <li>專題作品ㄛㄛ睏<br>-參加2016健康物聯網黑客松 hiot hackathon獲人氣獎</li>
+        
+        <li>實習經驗-顯赫資訊、鴻滕貿易公司實習內容</li>
+        <li>接案-Sophos Converter</li>
+        <li>碩班畢業論文-產婦衛教遊戲</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>主要作品</title>
+  <style type="text/css">
+    @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+* {
+  position: relative;
+  font-family: "Playfair Display", "微軟正黑體";
+}
+
+html, body {
+  background-color: #93d6d0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 50px 0px 50px 0px;
+  padding: 30px;
+  padding-top: 70px;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: 5px 5px 20px rgba(34, 34, 34, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.box::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(#7f7f7f, #9b9b9b);
+}
+
+h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.box1 {
+  flex-direction: column;
+}
+
+img {
+  width: 80%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  iframe {
+    width: 280px;
+    height: 200px;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+  .wrap{
+    width: 90%;
+  }
+}
+.box .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: gray;
+  position: absolute;
+  top: 100px;
+  right: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+.box .icon::after {
+  content: "123";
+  display: block;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.box:nth-child(1) .icon {
+  background: url(https://fadigeorge.files.wordpress.com/2010/02/unity_01.jpg);
+  background-size: contain;
+}
+.box:nth-child(1) .icon::after {
+  content: "Unity";
+  font-weight: bold;
+}
+
+.box:nth-child(2) .icon {
+  background: url(https://png.icons8.com/color/1600/visual-studio.png);
+  background-size: contain;
+}
+.box:nth-child(2) .icon::after {
+  content: "Visual Studio";
+  font-weight: bold;
+}
+
+.box:nth-child(3) .icon {
+  background: url(data:image/jpeg;base64,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);
+  background-size: contain;
+}
+.box:nth-child(3) .icon::after {
+  content: "Android Studio";
+  font-weight: bold;
+}
+
+h1::after {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: -20px;
+  background-size: contain;
+}
+
+.box:nth-child(1) h1::after {
+  background-image: url(https://lh6.googleusercontent.com/uNofpgAHOPCklY-eS5MwTz-yNU0VSOfAZiiDY-qXZYW_p9YMUNX7Yp0qstY=w2400);
+}
+
+.box:nth-child(2) h1::after {
+  background-image: url(https://www.nsasia.co.th/wp-content/uploads/2014/12/sophos_s.png);
+}
+
+.box:nth-child(3) h1::after {
+  background-image: url(https://lh3.googleusercontent.com/jSkvlgboaZOcV69mKSuiff_2ccTYsuvogLLWdMa-7lOD2cHzciACmhh5Mxc=w2400);
+}
+
+  </style>
+</head>
+<body>
+  
+<div class="wrap">
+  <div class="box box1">
+    <div class="icon"></div>
+    <div class="right">
+      <h1>產後衛教遊戲系統
+        <div class="tag"></div>
+      </h1><font>2018 Apr.</font>
+      <hr/>碩論系統
+      <h3>系統設計</h3>
+      <p>研究設計以決策樹為基礎之產後醫療行動遊戲式學習系統之建置與成效分析。本系統每一關卡主要分為兩個部分，分別是「知識學習」及「知識測驗」。在「知識學習」時，學習者可以通過觀看多媒體教材進行學習。在「知識學習」時，每一關卡會提供相對應的學習素材，包含文字、圖片、影音等多媒體教材。在「知識測驗」時，學習系統會根據情境問問題，若使用者未達過關標準會跳出遊戲結束視窗，可以選擇重新觀看教材或是回到主畫面。</p>
+      <p>本系統應用於開發產後教育遊戲，為符合產婦需求系統應用認知負荷較少的遊戲方式呈現。系統開發利用Unity，並使用Fungus套件增加互動性，系統內介面設計與程式的部分皆獨立完成。</p>
+      <h3>開發過程</h3>
+      <p>開發系統的兩個月來，前一個月，先到醫院與護理師見面了解產婦的知識面需求整理知識，後一個月集中於刻畫系統所需要的決策樹用於引導遊戲內容與設計介面並進行測試。</p>
+      <p>在使用系統的過程中，護理師也表示是可以執行的方案，後來也提供幾位產婦進行測試，表示遊戲大大減少了紙本的繁雜有情境的遊戲可以幫助產婦了解產後知識。</p>
+      <h3>系統架構圖</h3><img src="https://lh3.googleusercontent.com/6SCBkVG5Wpa-5m6Jz8lv1hyR-k1e80PD5DNcTULJeuNcYwaMDpTE17HVlQ4=w2400" alt=""/>
+      <h3>系統決策樹</h3><img src="https://lh6.googleusercontent.com/FrwI4TB1i6Bb16-t4NhSnqFzuXBi2_RfNNys1h3TilSRDSw0PcVNnFc4yrc=w2400" alt=""/>
+    </div>
+    <div class="left">
+      <h3>系統介面錄影</h3>
+      <center> 
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/EDxaFXeA70M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen"></iframe>
+      </center>
+    </div>
+  </div>
+  <div class="box">
+    <div class="icon"></div>
+    <h1>Sophos Coverter   Beta版</h1><font>2017 Oct.</font>
+    <hr/>
+    <h3>系統設計</h3>
+    <p>Sophos Converter需求是為了整合不同防毒軟體的設定檔，以讓客戶可以無縫接軌使用Sophos的產品。因此其他公司之設定檔做資料處理，把其轉乘對應格式的Sophos設定檔。在轉換過程中資料可能是不同版本，有著不同變數跟規格，因此需要根據使用者給的檔案判斷版本，並整理內部內容為物件，並輸出至Sophos對應格式到網站中。</p>
+    <h3>開發工具</h3>
+    <p>用C#程式，轉寫資料轉換工具程式，用物件導向概念寫的第一個作品。</p>
+    <p>使用方法：input檔案>>處理內部資料>>轉換正確xml檔案</p>
+    <h3>主要負責內容:</h3>
+    <ul>
+      <li>撰寫document轉換</li>
+      <li>紀錄偵錯log</li>
+      <li>紀錄失敗成功轉換比數</li>
+      <li>欲轉換檔案資料層次分類</li>
+    </ul><img src="https://lh6.googleusercontent.com/plMrP_7JO35mUsOJJ6oG7lCybmn0G5qVQBlF6MRm0EQ2Lo3fSE-O-SKcL5E=w2400" alt=""/><img src="https://lh4.googleusercontent.com/ZZ4qA52eGL_WD0NPptnobA8UmR6F10Y5TN0Xe_YZny97FopqUpkmwZyIjA0=w2400" alt=""/>
+  </div>
+  <div class="box">
+    <div class="icon"></div>
+    <h1>專題作品ㄛㄛ睏</h1><font>2016-2017</font>
+    <hr/>
+    <h3>系統設計</h3>
+    <p>隨著社會快速的脈動與成長，現代人的生活都承載著不少的壓力，根據國內的研究顯示25%以上的成年人曾有過失眠困擾，如入睡困難、維持困難或早醒等失眠狀態(Kao, Huang, Wang & Tsai, 2008)。睡眠品質的好壞在個人的健康與生活滿意度佔了極大的比重，因此app希望透過行動載具提供的數據以及自身紀錄之數據進行分析，提供對應回饋並改善使用者睡眠品質。</p>
+    <h3>開發工具</h3>
+    <p>用Android Studio開發Android App</p>
+    <h3>功能</h3>
+    <p>1. 以自律學習模式為基礎，讓使用者替自己設立生活目標，再檢視達成狀況。<br>2. 結合腕戴式裝置自動記錄生理數據，讓資料更精準、使用更便利，也節省使用者紀錄時間。<br>3. 透過專家系統可以把專業知識融合，並對使用者的病症對症下藥，解決他們的問題，同時也可以讓使用者有客製化的感受。<br>4. 提供衛教說明，讓使用者可以藉由教學輔助睡眠、獲取睡眠相關資訊。</p>
+    <p>使用開發平台：Android Studio、MySQL<br>使用語言：Android 語言、SQL<br>運用的穿戴式裝置：Epson手環</p>
+    <h3>主要負責內容:</h3>
+    <ul>
+      <li>撰寫給予回饋的專家系統規則</li>
+      <li>定義資料庫</li>
+      <li>json資料處理</li>
+      <li>衛教介面分類與設計</li>
+    </ul>
+    <h3>系統流程</h3><img src="https://lh5.googleusercontent.com/74Nsbq2R3vQ-IPPDdo1cVTq6ZaAxdY7oYx94y7gHMixiu7RueVCo4n1sWBg=w2400" alt=""/>
+    <h3>介面截圖</h3><img src="https://lh4.googleusercontent.com/1Ov32MyxNkkcWRjwutwmnu8K09bVQndyKi4kVLmJwAevfood4ns12io6kYM=w2400" alt=""/><img src="https://lh4.googleusercontent.com/zU0tWHpnxKb1wS3hEzPF7n73HnIMYgg_tKOXtv5hKN110BFHunEWOYzzGtk=w2400" alt=""/><img src="https://lh3.googleusercontent.com/7RYwRCEQ54gX1axLVzdtAtDteOwNhY8hgSnPhQ7POkgW2mwMcqkikt16Vbg=w2400" alt=""/><img src="https://lh6.googleusercontent.com/XCu3-7q8hjAMacP1RAVNXXEBs1hVxNbXCd2JiMZwsJBcm0qr0Z-NacCurl4=w2400" alt=""/><img src="https://lh6.googleusercontent.com/7hNfjklD7Fv7M5f2eJ5cNgQ2wQzCOgiR15vzfwPk77cKedCbb6quhkhD8Xw=w2400" alt=""/><img src="https://lh4.googleusercontent.com/Vp8SQmp7jEd8m06vl1oUqY3ngEg7DS-LhVGpTz-qthY6z9ABuDS89EoLFaM=w2400" alt=""/><img src="https://lh6.googleusercontent.com/0sPOI9ufpAxdH4TerR7Musf7P9yyYy28lsrkm_sFW9z0yyF8w-NAOBaDHcE=w2400" alt=""/>
+  </div>
+</div>
+</body>
+</html>
